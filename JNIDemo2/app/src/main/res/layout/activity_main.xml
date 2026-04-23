@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D0F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header : titre du module -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHIELD CORE"
+            android:textSize="11sp"
+            android:letterSpacing="0.3"
+            android:textColor="#555566"
+            android:fontFamily="monospace"
+            android:layout_marginTop="32dp" />
+
+        <!-- Badge central : ✓ ou ⚠ -->
+        <TextView
+            android:id="@+id/tvBadge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textSize="34sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Message de statut principal -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.05"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="36dp"
+            android:textColor="#CCCCDD" />
+
+        <!-- Séparateur -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1E1E2A"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Carte : signature du module natif -->
+        <LinearLayout
+            android:id="@+id/cardSig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#13131A"
+            android:padding="18dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NATIVE SIGNATURE"
+                android:textSize="9sp"
+                android:letterSpacing="0.25"
+                android:textColor="#444455"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvSig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#A0C8FF"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <!-- Carte : résultat du calcul natif -->
+        <LinearLayout
+            android:id="@+id/cardComp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#13131A"
+            android:padding="18dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NATIVE COMPUTE"
+                android:textSize="9sp"
+                android:letterSpacing="0.25"
+                android:textColor="#444455"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvCompute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#C8AAFF"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
